@@ -1,7 +1,7 @@
-package Youssef.com.PetWEbApp.Repositories;
+package Youssef.com.BookStoreWEbApp.Repositories;
 
 import org.springframework.data.repository.CrudRepository;
-import Youssef.com.PetWEbApp.Models.Author;
+import Youssef.com.BookStoreWEbApp.Models.Author;
 public interface AuthorRepository extends CrudRepository<Author,Long> {
 
 }

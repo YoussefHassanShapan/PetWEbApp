@@ -1,4 +1,4 @@
-package Youssef.com.PetWEbApp.Models;
+package Youssef.com.BookStoreWEbApp.Models;
 
 import jakarta.persistence.*;
 
@@ -18,34 +18,14 @@ public class Book {
             inverseJoinColumns = @JoinColumn(name = "author_id"))
     private Set<Author> authors = new HashSet<>();
 
-    public Book(String domainDrivenDesign, String number, String harperCollins) {
-    }
 
     public Book(String title, String isbn, Publisher publisher) {
         this.title = title;
         this.isbn = isbn;
         this.publisher = publisher;
     }
-
-    public Book(String title, String isbn, Publisher publisher, Set<Author> authors) {
-        this.title = title;
-        this.isbn = isbn;
-        this.publisher = publisher;
-        this.authors = authors;
-    }
-
-    public Book(Long id, String title, String isbn, Publisher publisher, Set<Author> authors) {
-        this.id = id;
-        this.title = title;
-        this.isbn = isbn;
-        this.publisher = publisher;
-        this.authors = authors;
-    }
-
     public Book() {
-
     }
-
 
     public Long getId() {
         return id;

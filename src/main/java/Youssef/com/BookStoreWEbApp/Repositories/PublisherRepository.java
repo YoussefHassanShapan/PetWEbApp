@@ -1,6 +1,6 @@
-package Youssef.com.PetWEbApp.Repositories;
+package Youssef.com.BookStoreWEbApp.Repositories;
 
-import Youssef.com.PetWEbApp.Models.Publisher;
+import Youssef.com.BookStoreWEbApp.Models.Publisher;
 import org.springframework.data.repository.CrudRepository;
 
 public interface PublisherRepository extends CrudRepository<Publisher,Long> {

@@ -1,4 +1,4 @@
-package Youssef.com.PetWEbApp.Models;
+package Youssef.com.BookStoreWEbApp.Models;
 
 import jakarta.persistence.*;
 
@@ -10,6 +10,9 @@ public class Publisher {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String name;
+    private String address;
+
+public Publisher(){}
 
     public String getAddress() {
         return address;
@@ -19,7 +22,6 @@ public class Publisher {
         this.address = address;
     }
 
-    private String address;
 
     public long getId() {
         return id;

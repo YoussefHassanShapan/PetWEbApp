@@ -1,4 +1,4 @@
-package Youssef.com.PetWEbApp.Models;
+package Youssef.com.BookStoreWEbApp.Models;
 
 import jakarta.persistence.*;
 
